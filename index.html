@@ -4,34 +4,64 @@
   <title>Mi web</title>
   <style>
     body {
-      background-color: black;
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
       color: white;
       text-align: center;
-      font-family: Arial;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
     }
 
     h1 {
-      color: yellow;
       font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
     }
 
     button {
-      padding: 10px;
+      margin-top: 20px;
+      padding: 10px 20px;
       font-size: 16px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
+      background-color: white;
+      color: black;
+    }
+
+    button:hover {
+      background-color: lightgray;
     }
   </style>
 </head>
 <body>
 
-  <h1>🚀 Mi web ya está online</h1>
-  <p>Si ves esto, GitHub funciona 😎</p>
+  <div class="container">
+    <h1>👋 Hola, soy yo</h1>
+    <p>Estoy aprendiendo a crear páginas web 🚀</p>
 
-  <button onclick="saludar()">Haz clic</button>
+    <img src="https://via.placeholder.com/150" alt="mi foto">
+
+    <br>
+
+    <button onclick="mensaje()">Haz clic</button>
+  </div>
 
   <script>
-    function saludar() {
-      alert("¡Funciona perfectamente!");
+    function mensaje() {
+      alert("¡Mi web ya es más pro!");
     }
   </script>
 
